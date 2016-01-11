@@ -59,6 +59,11 @@ VAMActivate tComment
 VAMActivate github:martong/vim-compiledb-path
 VAMActivate github:LaTeX-BoX-Team/LaTeX-Box
 VAMActivate github:Chiel92/vim-autoformat
+VAMActivate github:jeaye/color_coded
+VAMActivate github:ledger/vim-ledger
+VAMActivate ghcmod
+VAMActivate neco-ghc
+VAMActivate vim2hs
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => AutoFormat
@@ -157,6 +162,20 @@ let g:ycm_server_log_level = 'info' "default info"
 let g:ycm_extra_conf_vim_data =  ['getcwd()']
 
 nnoremap <C-h> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ghcmod
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set path += ""$HOME/.cabal/bin"
+autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => neco-ghc
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:necoghc_enable_detailed_browse = 1
+let g:ycm_semantic_triggers = {'haskell' : ['.']}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Gundo
@@ -297,6 +316,14 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
+" Set font according to system
+if has("mac") || has("macunix")
+    set gfn=Source\ Code\ Pro:h15,Menlo:h15
+elseif has("win16") || has("win32")
+    set gfn=Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h11
+elseif has("unix")
+    set gfn=Source\ Code\ Pro:h12,Bitstream\ Vera\ Sans\ Mono:h11
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
