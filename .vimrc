@@ -60,6 +60,7 @@ VAMActivate github:martong/vim-compiledb-path
 VAMActivate github:LaTeX-BoX-Team/LaTeX-Box
 VAMActivate github:Chiel92/vim-autoformat
 " VAMActivate github:jeaye/color_coded
+VAMActivate Clighter
 VAMActivate github:ledger/vim-ledger
 VAMActivate ghcmod
 VAMActivate neco-ghc
@@ -162,6 +163,12 @@ let g:ycm_server_log_level = 'info' "default info"
 let g:ycm_extra_conf_vim_data =  ['getcwd()']
 
 nnoremap <C-h> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Clighter
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:clighter_autostart = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ghcmod
