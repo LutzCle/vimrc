@@ -67,6 +67,14 @@ VAMActivate ghcmod
 VAMActivate neco-ghc
 VAMActivate vim2hs
 VAMActivate julia-vim
+VAMActivate Licenses
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Licenses
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:licenses_copyright_holders_name = 'Lutz, Clemens <lutzcle@cml.li>'
+let g:licenses_authors_name = 'Lutz, Clemens <lutzcle@cml.li>'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => AutoFormat
