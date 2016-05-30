@@ -59,7 +59,7 @@ VAMActivate tComment
 VAMActivate github:martong/vim-compiledb-path
 VAMActivate github:LaTeX-BoX-Team/LaTeX-Box
 VAMActivate github:Chiel92/vim-autoformat
-VAMActivate github:jeaye/color_coded
+" VAMActivate github:jeaye/color_coded
 VAMActivate github:ledger/vim-ledger
 VAMActivate ghcmod
 VAMActivate neco-ghc
