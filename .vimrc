@@ -61,6 +61,7 @@ VAMActivate github:LaTeX-BoX-Team/LaTeX-Box
 VAMActivate github:Chiel92/vim-autoformat
 " VAMActivate github:jeaye/color_coded
 VAMActivate Clighter
+VAMActivate github:petRUShka/vim-opencl
 VAMActivate github:ledger/vim-ledger
 VAMActivate ghcmod
 VAMActivate neco-ghc
