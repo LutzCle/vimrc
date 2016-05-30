@@ -66,6 +66,7 @@ VAMActivate github:ledger/vim-ledger
 VAMActivate ghcmod
 VAMActivate neco-ghc
 VAMActivate vim2hs
+VAMActivate julia-vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => AutoFormat
