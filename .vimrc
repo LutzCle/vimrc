@@ -68,6 +68,7 @@ VAMActivate neco-ghc
 VAMActivate vim2hs
 VAMActivate julia-vim
 VAMActivate Licenses
+VAMActivate csv
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Licenses
@@ -230,7 +231,7 @@ set whichwrap+=<,>,h,l
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
