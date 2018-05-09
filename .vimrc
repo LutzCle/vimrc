@@ -59,7 +59,7 @@ VAMActivate tComment
 VAMActivate github:martong/vim-compiledb-path
 VAMActivate github:LaTeX-BoX-Team/LaTeX-Box
 VAMActivate github:Chiel92/vim-autoformat
-" VAMActivate github:jeaye/color_coded
+VAMActivate github:jeaye/color_coded
 VAMActivate Clighter
 VAMActivate github:petRUShka/vim-opencl
 VAMActivate github:ledger/vim-ledger
@@ -69,6 +69,7 @@ VAMActivate vim2hs
 VAMActivate julia-vim
 VAMActivate Licenses
 VAMActivate csv
+VAMActivate Nvim-R
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Licenses
@@ -106,6 +107,7 @@ nmap <C-k> :AutoformatToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:LatexBox_custom_indent = 0
+let g:LatexBox_latexmk_options = '--enable-write18'
 
 " textwidth 80
 autocmd bufreadpre *.tex setlocal textwidth=80
@@ -156,7 +158,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " => YCM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:ycm_global_ycm_extra_conf = '~/Documents/ycm-conf/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.ycm/ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
 
 let g:ycm_enable_diagnostic_signs = 1
@@ -171,9 +173,14 @@ let g:ycm_total_in_strings = 1 "default 1
 let g:ycm_server_use_vim_stdout = 0 "default 0 (logging to console)
 let g:ycm_server_log_level = 'info' "default info"
 
-let g:ycm_extra_conf_vim_data =  ['getcwd()']
+let g:ycm_extra_conf_vim_data_root_dir = getcwd()
+let g:ycm_extra_conf_vim_data_explore = ['.']
+let g:ycm_extra_conf_vim_data = ['g:ycm_extra_conf_vim_data_root_dir', 'g:ycm_extra_conf_vim_data_explore']
 
 nnoremap <C-h> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" Use omnicomplete whenever YCM doesn't complete
+set omnifunc=syntaxcomplete#Complete
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Clighter
