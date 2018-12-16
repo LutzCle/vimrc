@@ -75,8 +75,8 @@ VAMActivate Nvim-R
 " => Licenses
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:licenses_copyright_holders_name = 'Lutz, Clemens <lutzcle@cml.li>'
-let g:licenses_authors_name = 'Lutz, Clemens <lutzcle@cml.li>'
+let g:licenses_copyright_holders_name = 'Clemens Lutz <lutzcle@cml.li>'
+let g:licenses_authors_name = 'Clemens Lutz <lutzcle@cml.li>'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => AutoFormat
