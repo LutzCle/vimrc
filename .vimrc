@@ -59,13 +59,14 @@ VAMActivate tComment
 VAMActivate github:martong/vim-compiledb-path
 VAMActivate github:LaTeX-BoX-Team/LaTeX-Box
 VAMActivate github:Chiel92/vim-autoformat
-VAMActivate github:jeaye/color_coded
+" VAMActivate github:jeaye/color_coded
 VAMActivate Clighter
 VAMActivate github:petRUShka/vim-opencl
 VAMActivate github:ledger/vim-ledger
-VAMActivate ghcmod
-VAMActivate neco-ghc
-VAMActivate vim2hs
+" VAMActivate ghcmod
+" VAMActivate neco-ghc
+" VAMActivate vim2hs
+VAMActivate github:w0rp/ale
 VAMActivate julia-vim
 VAMActivate Licenses
 VAMActivate csv
@@ -192,15 +193,27 @@ let g:clighter_autostart = 1
 " => ghcmod
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set path += ""$HOME/.cabal/bin"
-autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+" set path += ""$HOME/.cabal/bin"
+" autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => neco-ghc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:necoghc_enable_detailed_browse = 1
-let g:ycm_semantic_triggers = {'haskell' : ['.']}
+" let g:necoghc_enable_detailed_browse = 1
+" let g:ycm_semantic_triggers = {'haskell' : ['.']}
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ALE
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {'haskell': ['hfmt'],}
+let g:ale_linters = {'haskell': ['ghc', 'hlint'],}
+
+nmap <silent> <Leader><  <Plug>(ale_previous_wrap)
+nmap <silent> <Leader>>  <Plug>(ale_next_wrap)
+nmap <silent> <Leader>? <Plug>(ale_detail)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Gundo
