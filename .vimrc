@@ -71,6 +71,7 @@ VAMActivate julia-vim
 VAMActivate Licenses
 VAMActivate csv
 VAMActivate Nvim-R
+VAMActivate github:LnL7/vim-nix
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Licenses
