@@ -43,35 +43,35 @@ call SetupVAM()
 " use <c-x><c-p> to complete plugin names
 
 VAMActivate github:bling/vim-airline
-VAMActivate github:Valloric/YouCompleteMe
+" VAMActivate github:Valloric/YouCompleteMe
 " VAMActivate github:lyuts/vim-rtags
 VAMActivate molokai
 VAMActivate trailing-whitespace
-VAMActivate ctrlp
+" VAMActivate ctrlp
 " VAMActivate github:scrooloose/nerdtree
-VAMActivate github:sjl/gundo.vim
+" VAMActivate github:sjl/gundo.vim
 " VAMActivate fugitive (git)
-VAMActivate delimitMate
-VAMActivate Tabular
-VAMActivate ag
+" VAMActivate delimitMate
+" VAMActivate Tabular
+" VAMActivate ag
 VAMActivate EasyMotion
 VAMActivate tComment
-VAMActivate github:martong/vim-compiledb-path
+" VAMActivate github:martong/vim-compiledb-path
 VAMActivate github:LaTeX-BoX-Team/LaTeX-Box
-VAMActivate github:Chiel92/vim-autoformat
+" VAMActivate github:Chiel92/vim-autoformat
 " VAMActivate github:jeaye/color_coded
 " VAMActivate Clighter
-VAMActivate github:petRUShka/vim-opencl
-VAMActivate github:ledger/vim-ledger
+" VAMActivate github:petRUShka/vim-opencl
+" VAMActivate github:ledger/vim-ledger
 " VAMActivate ghcmod
 " VAMActivate neco-ghc
 " VAMActivate vim2hs
 VAMActivate github:w0rp/ale
-VAMActivate julia-vim
-VAMActivate Licenses
-VAMActivate csv
-VAMActivate Nvim-R
-VAMActivate github:LnL7/vim-nix
+" VAMActivate julia-vim
+" VAMActivate Licenses
+" VAMActivate csv
+" VAMActivate Nvim-R
+" VAMActivate github:LnL7/vim-nix
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Licenses
@@ -136,10 +136,10 @@ nnoremap <C-_> :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
 " => vim-compiledb-path
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-augroup Enter
-    autocmd!
-    autocmd VimEnter * :CompileDbPathIfExists ./compile_commands.json
-augroup END
+" augroup Enter
+"     autocmd!
+"     autocmd VimEnter * :CompileDbPathIfExists ./compile_commands.json
+" augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-airline
